@@ -9,7 +9,7 @@ setwd("./UCI HAR Dataset")
   
   # Read the activity labels
   activityLabels <- read.table("./activity_labels.txt")
-  colnames(activityLabels) <- t(c(activityHeading, "Activity Label"))
+  colnames(activityLabels) <- t(c(activityHeading, "ActivityLabel"))
   
   # Read the variable names from the following table
   features <- read.table("./features.txt")
