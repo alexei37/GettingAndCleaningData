@@ -67,4 +67,4 @@ names(full_means_and_stds) <- gsub("Acc", "Acceleration", names(full_means_and_s
 
 # Step 5: From the data set in step 4, create a second, independent tidy data set with the average of each variable for each activity and each subject.
 FinalTidyDataTable <- aggregate(. ~ SubjectID + Activity, data = full_means_and_stds, mean)
-write.table(FinalTidyDataTable, file = "TidyDataSet.txt")
+write.table(FinalTidyDataTable, file = "TidyDataSet.txt", row.names = FALSE)
